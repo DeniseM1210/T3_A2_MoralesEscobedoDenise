@@ -9,7 +9,11 @@
 <body>
     <legend>Ejercicio Validacion</legend>
     <fieldset>
+        <label>Validación HTML</label>
         <form action="" method="post">
+            <label>Nombre:</label>
+            <input type="text" id="caja_nombre" name="caja_nombre" size="10" required
+            pattern="[a-zA-Z]{2,}(\s[a-zA-Z]{2,})*">
             <label for="">Código Postal: </label>
             <input type="text" id="caja_cp" name="caja_cp" maxlength="5" size="10"
             required
@@ -33,6 +37,12 @@
             required
             pattern="[0-9]{3}(-)*[0-9]{3}(-)*[0-9]{4}">
             <br>
+            <label>Correo Electrónico:</label>
+            <input type="text" id="caja_correo" name="caja_correo" size="10" required
+            pattern="^[a-zA-Z0-9]+\.[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+$">
+            <label>Contraseña</label>
+            <input type="text" id="caja_contra" name="caja_contra" size="10" required
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
             <input type="submit" value="Inscribir" />
         </form>
     </fieldset>
