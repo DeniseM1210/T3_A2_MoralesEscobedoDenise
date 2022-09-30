@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <legend>Ejercicio Validacion</legend>
+    <fieldset>
+        <form action="" method="post">
+            <label for="">Código Postal: </label>
+            <input type="text" id="caja_cp" name="caja_cp" maxlength="5" size="10"
+            required
+            title="Ingrese 5 números"
+            pattern="[0-9]{5}">
+            <br>
+            <label for="">Número de control:</label>
+            <input type="text" id="caja_nc" name="caja_nc" maxlength="8" size="10"
+            required
+            title="Ingrese 8 números"
+            pattern="[0-9]{8}">
+            <br>
+            <label for="">Número de control (inicia con letra): </label>
+            <input type="text" id="caja_ncl" name="caja_ncl" maxlength="9" size="10"
+            required
+            title="Ingrese únicamente una letra al inicio y 8 números"
+            pattern="[SMACI]{1}[0-9]{8}">
+            <br>
+            <label>Número de teléfono:</label>
+            <input type="text" id="caja_numtel" name="caja-numtel" maxlength="12" size="10"
+            required
+            pattern="[0-9]{3}(-)*[0-9]{3}(-)*[0-9]{4}">
+            <br>
+            <input type="submit" value="Inscribir" />
+        </form>
+    </fieldset>
+</body>
+</html>
