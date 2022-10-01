@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <legend>Ejercicio Validacion</legend>
     <fieldset>
@@ -13,38 +15,70 @@
         <form action="" method="post">
             <label>Nombre:</label>
             <input type="text" id="caja_nombre" name="caja_nombre" size="10" required
-            pattern="[a-zA-Z]{2,}(\s[a-zA-Z]{2,})*">
+                pattern="[a-zA-Z]{2,}(\s[a-zA-Z]{2,})*">
+            <br>
             <label for="">Código Postal: </label>
-            <input type="text" id="caja_cp" name="caja_cp" maxlength="5" size="10"
-            required
-            title="Ingrese 5 números"
-            pattern="[0-9]{5}">
+            <input type="text" id="caja_cp" name="caja_cp" maxlength="5" size="10" required title="Ingrese 5 números"
+                pattern="[0-9]{5}">
             <br>
             <label for="">Número de control:</label>
-            <input type="text" id="caja_nc" name="caja_nc" maxlength="8" size="10"
-            required
-            title="Ingrese 8 números"
-            pattern="[0-9]{8}">
+            <input type="text" id="caja_nc" name="caja_nc" maxlength="8" size="10" required title="Ingrese 8 números"
+                pattern="[0-9]{8}">
             <br>
             <label for="">Número de control (inicia con letra): </label>
-            <input type="text" id="caja_ncl" name="caja_ncl" maxlength="9" size="10"
-            required
-            title="Ingrese únicamente una letra al inicio y 8 números"
-            pattern="[SMACI]{1}[0-9]{8}">
+            <input type="text" id="caja_ncl" name="caja_ncl" maxlength="9" size="10" required
+                title="Ingrese únicamente una letra al inicio y 8 números" pattern="[SMACI]{1}[0-9]{8}">
             <br>
             <label>Número de teléfono:</label>
-            <input type="text" id="caja_numtel" name="caja-numtel" maxlength="12" size="10"
-            required
-            pattern="[0-9]{3}(-)*[0-9]{3}(-)*[0-9]{4}">
+            <input type="text" id="caja_numtel" name="caja_numtel" maxlength="12" size="10" required
+                pattern="[0-9]{3}(-)*[0-9]{3}(-)*[0-9]{4}">
             <br>
             <label>Correo Electrónico:</label>
             <input type="text" id="caja_correo" name="caja_correo" size="10" required
-            pattern="^[a-zA-Z0-9]+\.[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+$">
+                pattern="^[a-zA-Z0-9]+\.[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+$">
+            <br>
             <label>Contraseña</label>
             <input type="text" id="caja_contra" name="caja_contra" size="10" required
-            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
+            <br>
+            <input type="submit" value="Inscribir" />
+        </form>
+    </fieldset>
+    <br>
+    <fieldset>
+        <label>Validación JavaScript</label>
+        <form action="" method="post">
+            <label>Nombre:</label>
+            <input type="text" id="caja_nombre" name="caja_nombre" size="10" required
+                pattern="[a-zA-Z]{2,}(\s[a-zA-Z]{2,})*">
+            <br>
+            <label for="">Código Postal: </label>
+            <input type="text" id="caja_cp" name="caja_cp" maxlength="5" size="10" required title="Ingrese 5 números"
+                pattern="[0-9]{5}">
+            <br>
+            <label for="">Número de control:</label>
+            <input type="text" id="caja_nc" name="caja_nc" maxlength="8" size="10" required title="Ingrese 8 números"
+                pattern="[0-9]{8}">
+            <br>
+            <label for="">Número de control (inicia con letra): </label>
+            <input type="text" id="caja_ncl" name="caja_ncl" maxlength="9" size="10" required
+                title="Ingrese únicamente una letra al inicio y 8 números" pattern="[SMACI]{1}[0-9]{8}">
+            <br>
+            <label>Número de teléfono:</label>
+            <input type="text" id="caja_numtel" name="caja-numtel" maxlength="12" size="10" required
+                pattern="[0-9]{3}(-)*[0-9]{3}(-)*[0-9]{4}">
+            <br>
+            <label>Correo Electrónico:</label>
+            <input type="text" id="caja_correo" name="caja_correo" size="10" required
+                pattern="^[a-zA-Z0-9]+\.[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+$">
+            <br>
+            <label>Contraseña</label>
+            <input type="text" id="caja_contra" name="caja_contra" size="10" required
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
+            <br>
             <input type="submit" value="Inscribir" />
         </form>
     </fieldset>
 </body>
+
 </html>
