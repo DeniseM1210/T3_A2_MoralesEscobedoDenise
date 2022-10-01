@@ -47,7 +47,7 @@
     <br>
     <fieldset>
         <label>Validación JavaScript</label>
-        <form action="" method="post">
+        <form action="" method="post" onsubmit="return validacion()">
             <label>Nombre:</label>
             <input type="text" id="caja_nombre" name="caja_nombre" size="10" required
                 pattern="[a-zA-Z]{2,}(\s[a-zA-Z]{2,})*">
@@ -79,6 +79,7 @@
             <input type="submit" value="Inscribir" />
         </form>
     </fieldset>
+    <script src="./scripts/validacion.js"></script>
 </body>
 
 </html>
