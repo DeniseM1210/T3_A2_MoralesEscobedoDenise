@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <header>
+        <a href="index.html">LOGO</a>
+    </header>
+
+    <main>
+        <p>Registrate en el sistema</p>
+        <form action="" method="POST" onsubmit="return validacion()">
+            <label for="">numero de control:</label>
+            <input type="text" name="caja_num_control" id="caja_num_control" placeholder="numero de control">
+            <br>
+            <label for="">nombre: </label>
+            <input type="text" name="caja_nombre" id="caja_nombre" placeholder="nombre">
+            <br>
+
+            <label for="">primer apellido: </label>
+            <input type="text" name="caja_primer_apellido" id="caja_primer_apellido" placeholder="primer_apellido">
+            <br>
+
+            <label for="">segundo apellido: </label>
+            <input type="text" name="caja_segundo_apellido" id="caja_segundo_apellido" placeholder="segundo_apellido">
+            <br>
+
+            <label for="">fecha de nacimiento: </label>
+            <input type="date" name="caja_fecha_nacimiento" id="caja_fecha_nacimiento" placeholder="fecha_nacimiento">
+            <br>
+
+            <label for="">semestre: </label>
+            <select id="semestres" name="semestres">
+                <option value="1">Semestre 1</option>
+                <option value="2">Semestre 2</option>
+                <option value="3">Semestre 3</option>
+                <option value="4">Semestre 4</option>
+                <option value="5">Semestre 5</option>
+                <option value="6">Semestre 6</option>
+                <option value="7">Semestre 7</option>
+                <option value="8">Semestre 8</option>
+                <option value="9">Semestre 9</option>
+                <option value="10">Semestre 10</option>
+            </select>
+            <br>
+
+            <label for="carreras">Selecciona una carrera:</label>
+            <select id="carreras" name="carreras">
+                <option value="Sistemas">Ingeniería en Sistemas Computacionales</option>
+                <option value="Mecatronica">Ingeniería en Mecatrónica</option>
+                <option value="Alimentarias">Ingeniería en Industrias Alimentarias</option>
+                <option value="Administracion">Licenciatura en Administración</option>
+            </select>
+            <br>
+
+            <p>Selecciona tus actividades extraescolares:</p>
+
+            <label for="deportiva">Deportiva:</label>
+            <input type="checkbox" id="deportiva" name="actividades" value="deportiva"><br>
+
+            <label for="cultural">Cultural:</label>
+            <input type="checkbox" id="cultural" name="actividades" value="cultural"><br>
+
+            <label for="artistica">Artística:</label>
+            <input type="checkbox" id="artistica" name="actividades" value="artistica"><br>
+
+            <br>
+            <p>Selecciona tu especialidad:</p>
+
+            <label for="ia">Inteligencia Artificial:</label>
+            <input type="radio" id="ia" name="especialidad" value="Inteligencia Artificial"><br>
+
+            <label for="cyberseguridad">Ciberseguridad:</label>
+            <input type="radio" id="cyberseguridad" name="especialidad" value="Ciberseguridad"><br>
+
+            <label for="robotica">Robótica:</label>
+            <input type="radio" id="robotica" name="especialidad" value="Robótica"><br>
+
+            <label for="medicina">Medicina:</label>
+            <input type="radio" id="medicina" name="especialidad" value="Medicina"><br>
+
+            <label for="alimentacion">Alimentación:</label>
+            <input type="radio" id="alimentacion" name="especialidad" value="Alimentación">
+            <br>
+
+            <br>
+            <input type="submit" value="Registrarse">
+        </form>
+        <script src="./scripts/validacion.js"></script>
+    </main>
+
+</body>
+
+</html>
